@@ -1,0 +1,96 @@
+#{
+    margin: auto;
+}
+body{
+    width: 1200px;
+    height: 916px;
+    /* background-color: #0037ff; */
+    background: radial-gradient(circle,#ffffff, #0084FF, #0037ff);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 60px;
+    margin-left: auto;
+    
+}
+.navigation{
+    width: 691px;
+    height: 134px;
+    gap: 10px;
+}
+h6{
+    width: 59px;
+    height: 24px;
+    font-weight: 700px;
+    color: #96bb7c;
+    size:14px;
+
+}
+
+h2{
+    font-family: Montserrat;
+    font-weight: 700px;
+    size: 40px;
+    width: 461px;
+    height:50px;
+    color: #ffffff;
+}
+p{
+    font-family: Montserrat;
+    font-weight: 400px;
+    size: 14px;
+    width: 463px;
+    height:40px;
+    color:#F6F6F6;
+}
+img{
+    width: 240px;
+    height: 602px;
+    
+}
+
+.imagecontainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+.scroll{
+    margin-left: -50px;
+    margin-top: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 100px;
+    width:1400px;
+    white-space:nowrap;
+}
+/* From here down the css the code is for mobile responsive  */
+@media (max-width: 480px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0 10px; 
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 10px;
+        max-width: 100%;
+    }
+    .imagecontainer {
+        gap: 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .scroll {
+        height: auto;
+        padding: 5px 0;
+    }
+    img {
+        max-width: 100%;
+        max-height: 200px; 
+    }
+}
